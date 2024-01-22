@@ -12,13 +12,15 @@ export function Register() {
                     <img src={infinityLogo} alt="" />
                     <h1>Cadastrar</h1>
                 </div>
-                <form action="">
+                <form>
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="email" />
                     <label htmlFor="password">Senha</label>
                     <input type="password" name="password" id="password" />
+                    <label htmlFor="retypePassword">Confirmar senha</label>
+                    <input type="password" name="retypePassword" id="retypePassword" />
                     <span>Já possui uma conta? <Link to={'/login'}>Login</Link></span>
-                    <button type="button">Cadastrar</button>
+                    <button type="submit">Cadastrar</button>
                 </form>
             </div>
         </main>
